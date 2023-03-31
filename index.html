@@ -11,18 +11,18 @@
   <body class="bg-cream text-sm">
     <section class="flex h-screen flex-col items-center justify-center">
       <!-- CARD -->
-      <div class="flex h-[620px] w-[340px] flex-col">
+      <div class="flex h-[620px] w-[340px] flex-col lg:h-[450px] lg:w-[600px] lg:flex-row">
         <!-- IMAGE -->
-        <picture>
-          <source media="(min-width: 640px)" srcset="./images/image-product-desktop.jpg" />
-          <img class="rounded-t-lg" src="./images/image-product-mobile.jpg" alt="Parfume" />
+        <picture class="lg:basis-1/2">
+          <source media="(min-width: 1024px)" srcset="./images/image-product-desktop.jpg" />
+          <img class="rounded-t-lg lg:rounded-none lg:rounded-l-lg" src="./images/image-product-mobile.jpg" alt="Parfume" />
         </picture>
 
         <!-- TEXT -->
-        <div class="flex h-full flex-col justify-between rounded-b-lg bg-white p-6">
+        <div class="flex h-full flex-col justify-between rounded-b-lg bg-white p-6 lg:basis-1/2 lg:rounded-none lg:rounded-r-lg lg:p-8">
           <h2 class="font-sans tracking-[0.3em] text-dark-grayish-blue">PERFUME</h2>
 
-          <h1 class="font-serif text-3xl text-very-dark-blue">Gabrielle Essence Eau De Parfum</h1>
+          <h1 class="font-serif text-3xl text-very-dark-blue lg:text-[2rem]">Gabrielle Essence Eau De Parfum</h1>
 
           <p class="font-sans leading-relaxed text-dark-grayish-blue">
             A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
